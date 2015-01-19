@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="Allram/android_device_samsung_jactivelte.git" path="device/samsung/jactivelte" remote="github" revision="cm-12.0" />
+
+ <remote  name="github"
+           fetch=".."
+           review="review.cyanogenmod.org" />
+
+  <remote  name="private"
+           fetch="ssh://git@github.com" />
+
+  <default revision="refs/heads/cm-12.0"
+           remote="github"
+           sync-c="true"
+           sync-j="4" />
+
+  <project path="device/samsung/jactivelte"¨name="Cyanogenmod/android_device_samsung_jactivelte" remote="github" revision="cm-12.0" />
   
   <project path="device/samsung/jflte" name="AntaresOne/android_device_samsung_jflte" remote="github" revision="cm-12.0" />
   <project path="device/samsung/jf-common" name="Cyanogenmod/android_device_samsung_jf-common" remote="github" revision="cm-12.0" />
